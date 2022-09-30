@@ -19,6 +19,22 @@ public:
         check = true;
     }
 
+    const std::string &getName() const {
+        return name;
+    }
+
+    int getQuantity() const {
+        return quantity;
+    }
+
+    void setQuantity(int quantity) {
+        Item::quantity = quantity;
+    }
+
+    bool isCheck() const {
+        return check;
+    }
+
 private:
     bool check = false;
     std::string name;

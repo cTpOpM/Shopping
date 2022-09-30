@@ -32,7 +32,7 @@ private:
     std::string email;
     std::string password;
     std::list<std::unique_ptr<ShoppingList>> personalLists;
-    std::list<std::unique_ptr<ShoppingList>> sharedLists;
+    //std::list<std::unique_ptr<ShoppingList>> sharedLists; //probably not the best solution, maybe make a single list
     std::list<std::unique_ptr<User>> friends;
 };
 
